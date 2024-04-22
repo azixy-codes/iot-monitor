@@ -21,7 +21,5 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // Partage des 10 dernières notification à travers toutes les vues
-        View::share('allNotifications', Notification::orderByDesc('id')->take(10)->get());
     }
 }

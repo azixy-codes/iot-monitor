@@ -19,8 +19,8 @@ class AppScriptRun extends Command
 
         foreach ($modules as $module) {
 
-            // 5% de possibilté de panne lorsque le module est en marche
-            if (rand(1, 100) <= 5 && $module->etat_marche === 1) {
+            // 10% de possibilté de panne lorsque le module est en marche
+            if (rand(1, 100) <= 10 && $module->etat_marche === 1) {
                 $module->etat_marche = 2;
                 $module->debut_fonctionnement = NULL;
                 $module->save();
