@@ -27,7 +27,7 @@
             datasets: datasets
         },
         options: {
-            responsive: true, // Instruct chart js to respond nicely.
+            responsive: true,
             scales: {
                 x: {
                     beginAtZero: true,
