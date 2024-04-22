@@ -30,7 +30,7 @@
 
             <div class="flex flex-col w-0 flex-1 overflow-hidden">
 
-                <x-top-menu />
+                <x-top-menu :allNotifications="$allNotifications" />
 
                 <!-- Interface principale -->
                 <main class="flex-1 relative overflow-y-auto focus:outline-none">

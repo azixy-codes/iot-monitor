@@ -1,3 +1,5 @@
+@props(['allNotifications'])
+
 <!-- Menu des réglages et notifications -->
 <div class="relative z-10 flex-shrink-0 flex h-16 bg-white shadow">
 

@@ -19,8 +19,8 @@
             <div class="relative shadow-md my-6 rounded-md overflow-hidden sm:rounded-lg text-gray-700 bg-white">
                 <h3 class="font-semibold border-b text-lg p-3">Notifications récentes</h3>
                 <div class="text-sm">
-                    @if($allNotifications->count()>0)
-                    @foreach($allNotifications as $notification)
+                    @if($notifications->count()>0)
+                    @foreach($notifications as $notification)
                     <a href="{{ route('modules.show', $notification->module_id) }}" class="block border-b py-2 px-2 {{ ($notification->read == 0) ? 'bg-yellow-50' : '' }}">
                         <p>{{ $notification->message }}</p>
                         <p class="text-xs text-right">{{ $notification->created_at->diffForHumans() }}</p>
